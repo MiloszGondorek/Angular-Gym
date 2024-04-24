@@ -1,0 +1,10 @@
+@import "../../../colors.scss";
+
+input,
+textarea {
+  border: 1px solid $second;
+  outline: none;
+  background-color: transparent;
+  padding: 5px 20px;
+  font-size: 1rem;
+}

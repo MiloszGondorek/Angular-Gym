@@ -1,0 +1,8 @@
+<div class="h-fit w-fit block">
+ <a [href]="link" class="font-[300] block" *ngIf="link!='';else test">
+  {{text}}
+ </a>
+ <ng-template #test>
+  <p class="font-[300] cursor-pointer">{{text}}</p>
+ </ng-template>
+</div>

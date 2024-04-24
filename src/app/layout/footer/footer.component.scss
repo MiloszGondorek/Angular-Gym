@@ -1,0 +1,8 @@
+@import "../../../colors.scss";
+
+footer {
+  background-color: $footer;
+  a {
+    transition: all 0.5s;
+  }
+}

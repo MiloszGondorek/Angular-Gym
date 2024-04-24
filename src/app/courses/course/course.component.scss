@@ -1,0 +1,34 @@
+.container {
+  transition: all 0.4s;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  opacity: 80%;
+}
+
+.container:hover {
+  width: calc(100% + 30px);
+  transform: translate(-50%, -20px);
+  border-radius: 4px;
+  box-shadow: -9px 9px 13px 0px rgba(0, 42, 86, 0.3);
+  z-index: 1;
+  opacity: 100%;
+  .textContainer {
+    max-height: 1000px;
+    transition: max-height 0.4s;
+    .texts {
+      transform: translateY(0%);
+    }
+  }
+}
+
+.textContainer {
+  overflow: hidden;
+  max-height: 1px;
+  transition: max-height 1s;
+  .texts {
+    transform: translateY(-100%);
+    transition: all 0.4s;
+    display: block;
+  }
+}

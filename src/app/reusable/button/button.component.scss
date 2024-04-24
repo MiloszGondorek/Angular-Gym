@@ -1,0 +1,30 @@
+@import "../../../colors.scss";
+
+div {
+  border: 1px solid $main;
+  border-radius: 100px;
+  transition: all 0.4s;
+}
+
+a,
+p {
+  font-size: 1.125rem;
+  color: $main;
+  padding: 15px 40px;
+  opacity: 70%;
+  transition: all 0.4s;
+}
+
+a.dark,
+p .dark {
+  color: $second;
+}
+
+div:hover {
+  background-color: $main;
+  opacity: 100%;
+  p,
+  a {
+    color: $par-l;
+  }
+}
