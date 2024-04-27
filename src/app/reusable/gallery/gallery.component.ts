@@ -10,4 +10,16 @@ import { Component, Input } from '@angular/core';
 })
 export class GalleryComponent {
   @Input() src!: string[];
+
+  isImg = false;
+  img!: string;
+
+  showImg(src: string) {
+    this.isImg = true;
+    this.img = src;
+  }
+
+  hideImg() {
+    this.isImg = false;
+  }
 }

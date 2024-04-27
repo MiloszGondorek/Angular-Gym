@@ -1,13 +1,16 @@
 <div class="cWidth mx-auto">
- <h1 class="dark text-[2.188rem] font-semibold mt-[50px]">Courses</h1>
- <p class="text-[1.125rem] text-justify dark mt-[10px]">Join our dynamic group fitness classes and take your workout to
-  the next
-  level! From heart-pumping cardio sessions to muscle-building strength workouts, we offer a wide variety of classes to
-  suit every fitness level and interest. Whether you prefer the energy of high-intensity interval training, the flow of
-  yoga, or the fun of dance-based workouts, our experienced instructors will guide you through engaging and effective
-  workouts designed to help you reach your goals. Check out our schedule and find the perfect class to energize your
-  fitness routine!</p>
- <div class="grid grid-cols-3 mt-[50px] pb-[50px] gap-[10px]" #container>
-  <app-course *ngFor="let course of names" [header]="course.name" [src]="course.img" (mouseenter)="funTest(el)" #el />
- </div>
+  <h1 class="dark text-[2.188em] font-semibold mt-[50px]">Courses</h1>
+  <p class="text-[1.125em] text-justify dark mt-[10px]">Join our dynamic group fitness classes and take your workout to
+    the next
+    level! From heart-pumping cardio sessions to muscle-building strength workouts, we offer a wide variety of classes
+    to
+    suit every fitness level and interest. Whether you prefer the energy of high-intensity interval training, the flow
+    of
+    yoga, or the fun of dance-based workouts, our experienced instructors will guide you through engaging and effective
+    workouts designed to help you reach your goals. Check out our schedule and find the perfect class to energize your
+    fitness routine!</p>
+  <div class="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 mt-[50px] pb-[100px] gap-[10px]" #container>
+    <app-course *ngFor="let course of names" [header]="course.name" [src]="course.img" [link]="course.link"
+      (mouseenter)="funTest(el)" #el />
+  </div>
 </div>

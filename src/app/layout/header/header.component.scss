@@ -1,0 +1,9 @@
+@import "../../../colors.scss";
+
+a p {
+  transition: all 0.4s;
+}
+
+a:hover p {
+  color: $main;
+}

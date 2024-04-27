@@ -9,5 +9,11 @@ import { GalleryComponent } from '../reusable/gallery/gallery.component';
   styleUrl: './about.component.scss',
 })
 export class AboutComponent {
-  src: string[] = ['gym.jpg', 'gym.jpg', 'gym.jpg', 'gym.jpg', 'gym.jpg'];
+  src: string[] = [
+    'gym.jpg',
+    'gym2.jpg',
+    'box_small.png',
+    'yoga_small.png',
+    'main.jpg',
+  ];
 }

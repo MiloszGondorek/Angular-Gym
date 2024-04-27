@@ -1,16 +1,18 @@
-<a href="">
+<a href="/courses/{{link}}">
  <div class="relative" id="gContainer" #parent>
-  <div class="w-full h-fit container absolute overflow-hidden sContainer" #absolute>
+  <div class="w-full h-fit container opacity-80 sm:absolute overflow-hidden sContainer" #absolute>
    <div class="relative">
     <img src="../../../assets/images/{{src}}" alt="" class="aspect-[3/2] object-cover block" #child>
     <div class="absolute w-full h-full bg-[#00143170] left-0 top-0 flex flex-col justify-center bg">
-     <h1 class="text-center text-[2.5rem] font-semibold colorM">{{header}}</h1>
+     <h1 class="text-center text-[2.5em] font-semibold colorM">{{header}}</h1>
     </div>
 
    </div>
    <div class="textContainer">
     <div class="p-[20px] bg-white texts">
-     <p class="dark text-justify">Dive into our boxing classes for an exhilarating workout that combines cardio,
+     <p class="dark text-justify">Dive into our boxing classes for an
+      exhilarating workout
+      that combines cardio,
       strength,
       and agility
       training.

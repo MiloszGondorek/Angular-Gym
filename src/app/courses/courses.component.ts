@@ -13,12 +13,12 @@ export class CoursesComponent {
   @ViewChild('container') container!: ElementRef;
 
   names: courseData[] = [
-    new courseData('BOXING', 'box_small.png'),
-    new courseData('YOGA', 'yoga_small.png'),
-    new courseData('STRENGTH', 'strength_small.png'),
-    new courseData('PERSONAL', 'personal_small.png'),
-    new courseData('BOXING', 'box_small.png'),
-    new courseData('YOGA', 'yoga_small.png'),
+    new courseData('BOXING', 'box_small.png', '1'),
+    new courseData('YOGA', 'yoga_small.png', '2'),
+    new courseData('STRENGTH', 'strength_small.png', '3'),
+    new courseData('PERSONAL', 'personal_small.png', '4'),
+    new courseData('BOXING', 'box_small.png', '5'),
+    new courseData('YOGA', 'yoga_small.png', '6'),
   ];
 
   public funTest(el: any) {
@@ -36,8 +36,9 @@ class courseData {
   desc!: string;
   img!: string;
   link!: string;
-  constructor(name: string, img: string) {
+  constructor(name: string, img: string, link: string) {
     this.name = name;
     this.img = img;
+    this.link = link;
   }
 }
