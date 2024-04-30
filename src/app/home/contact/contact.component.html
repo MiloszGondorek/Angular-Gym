@@ -11,11 +11,16 @@
   <h1 class="dark text-[2.188em] font-bold">LEAVE A MESSAGE</h1>
   <form action="" class="flex flex-col gap-[10px] max-md:mt-[10px]">
    <div class="grid grid-cols-2 max-md:grid-cols-1 w-full gap-[10px]">
-    <input type="text" placeholder="Name">
-    <input type="text" placeholder="Email">
+    <input type="text" placeholder="Name" #name>
+    <input type="text" placeholder="Email" #email>
    </div>
-   <textarea name="" placeholder="Message" class="w-full h-[150px]"></textarea>
-   <Mbutton text="SEND MESSAGE" [dark]="true" />
+   <textarea name="" placeholder="Message" class="w-full h-[150px]" #message></textarea>
+   <p
+    [ngClass]="{'text-red-500': messageType=='error','text-green-500':messageType=='sended','hidden':messageType=='none'}">
+    {{retMessage}}</p>
+   <div (click)="sendEmail()">
+    <Mbutton text="SEND MESSAGE" [dark]="true" />
+   </div>
   </form>
  </div>
 </div>

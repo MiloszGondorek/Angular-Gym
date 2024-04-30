@@ -12,8 +12,8 @@ export class AboutComponent {
   src: string[] = [
     'gym.jpg',
     'gym2.jpg',
-    'box_small.png',
-    'yoga_small.png',
-    'main.jpg',
+    'courses/boxing/0.jpg',
+    'courses/yoga/0.jpg',
+    'courses/personal/2.jpg',
   ];
 }
