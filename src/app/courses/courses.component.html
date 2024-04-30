@@ -9,8 +9,7 @@
     yoga, or the fun of dance-based workouts, our experienced instructors will guide you through engaging and effective
     workouts designed to help you reach your goals. Check out our schedule and find the perfect class to energize your
     fitness routine!</p>
-  <div class="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 mt-[50px] pb-[100px] gap-[10px]" #container>
-    <app-course *ngFor="let course of names" [header]="course.name" [src]="course.img" [link]="course.link"
-      (mouseenter)="funTest(el)" #el />
+  <div class="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:gap-[20px] mt-[50px] gap-[10px]">
+    <app-course *ngFor="let course of names" [header]="course.name" [src]="course.img" [link]="course.link" />
   </div>
 </div>

@@ -1,0 +1,16 @@
+<div class="relative">
+  <div class="relative">
+    <img src="../../assets/images/{{mainImg}}" alt="" class="w-full h-[30vw] min-h-[300px] max-h-[500px] object-cover">
+    <div class="absolute left-0 top-0 w-full h-full bg-[#001431] opacity-70"></div>
+  </div>
+  <h1 class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-[3.438em] font-semibold colorM">{{header}}
+  </h1>
+</div>
+<div class="cWidth mx-auto mt-[50px]">
+  <div class="flex flex-col gap-[20px]">
+    <p class="dark text-justify text-[1.125em]" *ngFor="let p of currDesc">{{p}}</p>
+  </div>
+  <div class="mt-[30px]">
+    <app-gallery [src]="src" />
+  </div>
+</div>

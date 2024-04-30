@@ -13,22 +13,13 @@ export class CoursesComponent {
   @ViewChild('container') container!: ElementRef;
 
   names: courseData[] = [
-    new courseData('BOXING', 'box_small.png', '1'),
-    new courseData('YOGA', 'yoga_small.png', '2'),
-    new courseData('STRENGTH', 'strength_small.png', '3'),
-    new courseData('PERSONAL', 'personal_small.png', '4'),
-    new courseData('BOXING', 'box_small.png', '5'),
-    new courseData('YOGA', 'yoga_small.png', '6'),
+    new courseData('BOXING', 'boxing/0.jpg', '0'),
+    new courseData('DANCE', 'dance/0.jpg', '1'),
+    new courseData('PERSONAL', 'personal/0.jpg', '2'),
+    new courseData('STRENGTH', 'strength/0.jpg', '3'),
+    new courseData('STRETCHING', 'stretching/0.jpg', '4'),
+    new courseData('YOGA', 'yoga/0.jpg', '5'),
   ];
-
-  public funTest(el: any) {
-    const c = this.container.nativeElement.querySelectorAll('.sContainer');
-    Array.from(c).forEach((element: any) => {
-      element.style.zIndex = '0';
-    });
-
-    el.absolute.nativeElement.style.zIndex = '2';
-  }
 }
 
 class courseData {

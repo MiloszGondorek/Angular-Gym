@@ -1,11 +1,12 @@
-<div class="grid grid-cols-4 grid-rows-2 gap-[20px]">
- <div *ngFor="let i of src" class="relative w-full aspect-square cursor-pointer" (click)="showImg(i)">
-  <img src="../../../assets/images/{{i}}" alt="" class="absolute block w-full h-full">
-  <div class="bg bg-[#001431] opacity-40 absolute h-full w-full"></div>
- </div>
+<div class="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 gap-[20px] max-lg:gap-[10px]">
+  <div *ngFor="let i of src" class="relative w-full aspect-square cursor-pointer" (click)="showImg(i)">
+    <img src="../../../assets/images/{{i}}" alt="" class="absolute block w-full h-full">
+    <div class="bg bg-[#001431] opacity-40 absolute h-full w-full"></div>
+  </div>
 </div>
 
-<div class="fixed top-0 left-0 h-full" [ngClass]="{'w-full': isImg}" (click)="hideImg()">
- <img src="../../../assets/images/{{img}}" alt=""
-  class="w-11/12 max-h-[80vh] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover">
+<div class="fixed top-0 left-0 h-full bg-[#000000b9]" [ngClass]="{'w-full': isImg}" (click)="hideImg()">
+  <img src="../../../assets/images/{{img}}" alt=""
+    class="max-w-[95%] max-h-[80vh] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover"
+    [ngClass]="{'hidden': !isImg}">
 </div>

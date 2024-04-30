@@ -6,6 +6,12 @@ img {
     grid-row: span 2 / span 2;
     grid-column: span 2 / span 2;
   }
+  :nth-last-child(1) {
+    @media screen and (max-width: 1023px) and (min-width: 768px) {
+      grid-column: span 2 / span 2;
+      aspect-ratio: unset;
+    }
+  }
   div {
     img,
     .bg {

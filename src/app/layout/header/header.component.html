@@ -1,16 +1,20 @@
-<header>
- <div class="cWidth mx-auto h-[80px] flex justify-between">
+<header class="fixed top-0 z-[10] w-full">
+ <div class="cWidth mx-auto h-[80px] flex justify-between ">
   <a href="/" class="my-auto text-[20px]">
    <h1>FIT <span class="colorM">FUSION</span></h1>
   </a>
-  <div class="flex gap-x-[50px] my-auto">
-   <a href="/">
+  <img src="../../../assets/icons/more.svg" alt="" class="hidden max-lg:block w-[35px] cursor-pointer"
+   (click)="changeHeader()">
+  <div
+   class="flex gap-x-[50px] my-auto max-lg:absolute right-0 top-[80px] max-lg:h-screen max-lg:flex-col max-lg:w-[max(60vw,300px)] max-lg:bg-[#00050d] transition-all duration-[0.4s]"
+   [ngClass]="{'max-lg:translate-x-[100%]':!showHeader}">
+   <a href="/" class="max-lg:py-[30px] max-lg:px-[15px] max-lg:hover:bg-[#0d1016]">
     <p>HOME</p>
    </a>
-   <a href="/about">
+   <a href="/about" class="max-lg:py-[30px] max-lg:px-[15px] max-lg:hover:bg-[#0d1016]">
     <p>ABOUT US</p>
    </a>
-   <a href="/courses">
+   <a href="/courses" class="max-lg:py-[30px] max-lg:px-[15px] max-lg:hover:bg-[#0d1016]">
     <p>COURSES</p>
    </a>
   </div>
